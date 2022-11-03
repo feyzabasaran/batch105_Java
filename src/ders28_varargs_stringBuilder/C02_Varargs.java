@@ -7,7 +7,7 @@ public class C02_Varargs {
         topla(5,6); // 11
         topla(5,3,8); // 16
         topla(2,4,6,8); // 20
-        topla(1); // 1
+        topla(); // 0
         topla(3,6,7,4,7,9,0,3,1); // 40
 
         /*
