@@ -6,7 +6,7 @@ public class C07_ImmutableString {
 
         String str = "Java Candir";
 
-       str = str.toUpperCase();
+        str = str.toUpperCase();
 
         System.out.println(str); // JAVA CANDIR
 

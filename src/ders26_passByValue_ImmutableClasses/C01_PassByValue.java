@@ -31,7 +31,7 @@ public class C01_PassByValue {
     public static double indirimUygula(double fiyat) {
         // %10 indirim yapsin
 
-        fiyat= fiyat*0.9; // fiyata atama yaptik kalici olarak 90 oldu.
+         fiyat= fiyat*0.9; // fiyata atama yaptik kalici olarak 90 oldu.
 
         return fiyat;
     }
