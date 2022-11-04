@@ -18,12 +18,12 @@ public class C04_StringBuilder {
         System.out.println(sb.length()); // 4 karakter uzunlugunda
 
         sb.append(" guzeldir.");
-        System.out.println(sb);
+        System.out.println(sb); // Java guzeldir.
         System.out.println(sb.capacity()); // 7*2+2 = 16
         System.out.println(sb.length()); // 14
 
         sb.append(" ona ne suphe");
-        System.out.println(sb);
+        System.out.println(sb); // Java guzeldir. ona ne suphe
         System.out.println(sb.capacity()); // 34
         System.out.println(sb.length()); // 27
 
