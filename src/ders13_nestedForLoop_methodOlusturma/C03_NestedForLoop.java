@@ -15,6 +15,8 @@ public class C03_NestedForLoop {
 
                 System.out.print(i*j + " " );
 
+                // System.out.print(i + "*" + j + "=" + (i * j) + " "); 1*1=1 2*1=2 seklinde yazdirma
+
             }
             // ic dongu bittiginde javayi alt satira indirmeliyiz
             System.out.println("");
