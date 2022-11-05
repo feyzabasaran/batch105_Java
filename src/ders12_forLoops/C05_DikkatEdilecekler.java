@@ -8,8 +8,6 @@ public class C05_DikkatEdilecekler {
             System.out.print(i +" ");
         }
         */
-
-
         // ilk degher icin bitis sarti true olmuyorsa
         // for body'si hic devreye giremez
         for (int i = 0; i >10 ; i++) {
