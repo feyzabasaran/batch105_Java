@@ -5,11 +5,11 @@ public class C04_RakamlarToplami {
 
         // kullanicinin verdigi sayinin rakamlar toplamini bulun
 
-        long sayi= 43011238841L;
+        int sayi= 1453;
         String sayiStr= ""+sayi;
 
-        long birlerBasamagi= 0;
-        long rakamlarToplami=0;
+        int birlerBasamagi= 0;
+        int rakamlarToplami=0;
 
         for (int i = 1; i <=sayiStr.length() ; i++) {
 
