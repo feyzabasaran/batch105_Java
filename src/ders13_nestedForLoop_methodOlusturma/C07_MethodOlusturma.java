@@ -17,7 +17,5 @@ public class C07_MethodOlusturma {
 
         System.out.println(buyukStr.contains("S")); // true
 
-
-
     }
 }
