@@ -1,7 +1,5 @@
 package ders19_arrays;
 
-import com.sun.jdi.ArrayReference;
-
 import java.util.Arrays;
 
 public class C06_ArrayeYeniDegerAtama {
@@ -9,8 +7,6 @@ public class C06_ArrayeYeniDegerAtama {
 
         String str="Java";
         str="hava";
-
-
 
         /*
         var olan bir array'in uzunlugunu degistirilemez
@@ -35,5 +31,7 @@ public class C06_ArrayeYeniDegerAtama {
         // ancak var olan bir array'e yeni deger atamasi icin { } kullanilamaz.
 
         // arr1= {"g","h"}; olmaz
+
+        int [] arr ={3,4,5};
     }
 }

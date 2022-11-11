@@ -9,9 +9,10 @@ public class C01_ElemanlariSagaKaydirma {
         //Orn : input : [4,5,6,7] array’in son hali. : [7,4,5,6]
 
         int [] arr = {4,5,6,7};
+
         arr=sagaKaydir(arr);
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr));  // [7, 4, 5, 6]
 
 
     }

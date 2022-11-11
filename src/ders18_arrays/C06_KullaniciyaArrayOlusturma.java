@@ -6,10 +6,11 @@ import java.util.Scanner;
 public class C06_KullaniciyaArrayOlusturma {
     public static void main(String[] args) {
 
-        // Kullanicidan array’in boyutunu ve elementlerini alip
+        // Kullanicidan array’in boyutunu ve elementlerini alip,
         // array’i olusturan ve bize donduren bir method olusturun.
 
         int[] kullaniciArrayi= arrayOlustur();
+
         System.out.println(Arrays.toString(kullaniciArrayi));
     }
 

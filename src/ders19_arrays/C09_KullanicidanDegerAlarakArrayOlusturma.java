@@ -24,7 +24,6 @@ public class C09_KullanicidanDegerAlarakArrayOlusturma {
                 arr[0]=girilenSayi;
             }else if (girilenSayi!=0){
                arr= C08_ArrayeElementEklemeMethodu.arrayeElemanEkleMethodu(arr,girilenSayi);
-
             }
 
         }while (girilenSayi!=0);

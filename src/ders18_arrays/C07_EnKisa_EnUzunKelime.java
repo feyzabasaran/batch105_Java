@@ -5,7 +5,7 @@ public class C07_EnKisa_EnUzunKelime {
         // Verilen String bir array’deki
         // en uzun ve en kisa kelimeleri yazdiran bir method olusturun.
 
-        String[] arr =  {"Hasan", "Ilker", "Senturk", "Omer Faruk"};
+        String[] arr =  {"Su", "Ilker", "Senturk", "Omer Faruk"};
         enUzunEnKisaIsimleriYazdir(arr);
 
 

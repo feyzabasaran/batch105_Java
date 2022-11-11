@@ -8,7 +8,7 @@ public class C05_ArraydeElemanArama {
         // ve varsa kac kere kullanildigini yazdiran bir method olusturun.
 
         int [] arr ={1,2,4,5,3,6,7,4,2,3,5,1,3,2};
-        int arananEleman=2;
+        int arananEleman=5;
 
         elemanAra(arr,arananEleman);
     }
