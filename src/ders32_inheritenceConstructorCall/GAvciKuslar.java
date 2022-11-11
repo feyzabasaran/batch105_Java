@@ -23,7 +23,7 @@ public class GAvciKuslar extends FKuslar{
         variable ve methodlar farkli davranislar gosterirler.
          */
 
-
+        String str= new String("Kus");
 
 
     }
