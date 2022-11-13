@@ -12,13 +12,13 @@ public class C03_MDA_EnUzunKelime {
 
         for (int i = 0; i < arr.length ; i++) { // outer array'in elemanlarini kontrol eder
 
-            for (int j = 0; j <arr[i].length ; j++) {
+            for (int j = 0; j <arr[i].length ; j++) { // inner array'in elemanlarni kontrol eder
 
                if (arr[i][j].length() >enUzunKelime.length()){
                    enUzunKelime= arr[i][j];
                }
             }
         }
-        System.out.println(enUzunKelime);
+        System.out.println(enUzunKelime); // Yusuf Enes
     }
 }

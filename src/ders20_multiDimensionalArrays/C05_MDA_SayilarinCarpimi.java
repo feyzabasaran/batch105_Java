@@ -2,6 +2,7 @@ package ders20_multiDimensionalArrays;
 
 public class C05_MDA_SayilarinCarpimi {
     public static void main(String[] args) {
+
         // Soru 4- Verilen 2 katli bir array’de bulunan
         // tum sayilarin carpinini bize donduren bir method olusturun.
 
