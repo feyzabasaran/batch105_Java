@@ -22,10 +22,10 @@ public class C05_set {
         // Java'da set() update icin kullanilir.
         // Add() ile set() farklidir.
 
-        System.out.println(sayilar.set(0, 8)); // 0. indexi 8 yapti
+        System.out.println(sayilar.set(0, 8)); // eski degeri 1 olarak verir // 0. indexi 8 yapti
         int eskiDeger= sayilar.set(1,9);
-        System.out.println(eskiDeger);
-        System.out.println(sayilar);
+        System.out.println(eskiDeger); // 2
+        System.out.println(sayilar); // [8, 9, 4, 3, 5, 3, 5, 2, 5, 1, 2, 4, 5, 3, 4, 5]
 
 
     }

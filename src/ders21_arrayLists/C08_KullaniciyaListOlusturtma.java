@@ -30,10 +30,7 @@ public class C08_KullaniciyaListOlusturtma {
             if (!girilenIsim.equalsIgnoreCase("q")){
                 isimler.add(girilenIsim);
             }
-
-
         }
-
         return isimler;
     }
 }

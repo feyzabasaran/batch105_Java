@@ -16,9 +16,9 @@ public class C06_remove {
         }
 
         sayilar.remove(2); // 2. index'deki sayiyi sildi
-        System.out.println(sayilar);
+        System.out.println(sayilar); // [1, 2, 3, 5, 3, 5, 2, 5, 1, 2, 4, 5, 3, 4, 5]
 
-        sayilar.remove(5);
+        sayilar.remove(5); // 5.index'deki sayiyi sildi
         System.out.println(sayilar); //  [1, 2, 3, 5, 3, 2, 5, 1, 2, 4, 5, 3, 4, 5]
 
         /*
@@ -42,7 +42,7 @@ public class C06_remove {
         silinecekObje=10;
         System.out.println(sayilar.remove(silinecekObje)); // false doner cunku sayi listede yok
 
-        sayilar.remove(20); // IndexOutOfBoundsException verir cunku 20. index yok
+        // sayilar.remove(20); // IndexOutOfBoundsException verir cunku 20. index yok
 
     }
 

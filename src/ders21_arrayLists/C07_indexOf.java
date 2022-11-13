@@ -15,10 +15,10 @@ public class C07_indexOf {
             sayilar.add(arr[i]);
         }
 
-        System.out.println(sayilar.indexOf(2)); // 1 .indexte 2 yi buldu
+        System.out.println(sayilar.indexOf(2)); // 1.indexte 2 yi buldu
 
         System.out.println(sayilar.indexOf(5)); // 4.indexte 5'i buldu
 
-        System.out.println(sayilar.lastIndexOf(5)); // 15
+        System.out.println(sayilar.lastIndexOf(5)); // 15 sondan sayiyor
     }
 }

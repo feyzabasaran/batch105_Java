@@ -19,5 +19,7 @@ public class C02_TopluElemanEkleme {
             harfler.add(arr[i]);
         }
         System.out.println(harfler); // [a, e, i, o, u]
+
+        System.out.println(harfler.size()); // 5 list'in uzunlugunu bulur
     }
 }

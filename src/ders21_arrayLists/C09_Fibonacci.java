@@ -21,7 +21,7 @@ public class C09_Fibonacci {
         }else if (girilenSayi==0){
             System.out.println("0'dan kucuk fibonacci sayisi yoktur");
         } else if (girilenSayi==1) {
-            System.out.println("birden kucuk tek fibonacci sayisi vardir: 0");
+            System.out.println("1'den kucuk tek fibonacci sayisi vardir: 0");
         }else {
             fibonacciSayilariniyazdir(girilenSayi);
         }

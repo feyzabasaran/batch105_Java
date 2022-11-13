@@ -15,7 +15,7 @@ public class C04_ArraydenTekrarlariSilme {
 
         // bu soruyu array'le yapmak cok zor
         // bunun yerine bu array'in elemanlarini tek tek inceleyip
-        // tekrarsiz olanlari bir liste atalim
+        // tekrarsiz olanlari bir list'e atalim
         // en son o list'deki elementleri iceren bir array olusturup
         // yeni array'i eski array'e deger olarak atayalim
 
@@ -28,7 +28,7 @@ public class C04_ArraydenTekrarlariSilme {
                 tekrarsizListe.add(arr[i]);
             }
         }
-        System.out.println("Tekrarsiz liste: " + tekrarsizListe);
+        System.out.println("Tekrarsiz liste: " + tekrarsizListe); // [1, 2, 4, 3, 5]
 
         arr=new int[tekrarsizListe.size()]; // [0,0,0,0,0]
 
@@ -38,6 +38,7 @@ public class C04_ArraydenTekrarlariSilme {
         }
 
         // array istenen hale geldi
-        System.out.println("Array'İn tekrarsiz hali" + Arrays.toString(arr));
+
+        System.out.println("Array'in tekrarsiz hali: " + Arrays.toString(arr));  //  [1, 2, 4, 3, 5]
     }
 }
