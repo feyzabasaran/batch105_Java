@@ -17,15 +17,15 @@ public class C03_ArrayIndexOutOfBoundsException {
         int index = scan.nextInt();
 
         try {
-            //
+
             System.out.println(arr[index]);
 
         } catch (ArrayIndexOutOfBoundsException hata) {
 
             // System.out.println(hata.getMessage()); // Index 56 out of bounds for length 12
             // hata.printStackTrace();
-            //java.lang.ArrayIndexOutOfBoundsException: Index 13 out of bounds for length 12
-            //at ders35_exceptions.C03_ArrayIndexOutOfBoundsException.main(C03_ArrayIndexOutOfBoundsException.java:21)
+            // java.lang.ArrayIndexOutOfBoundsException: Index 13 out of bounds for length 12
+            // at ders35_exceptions.C03_ArrayIndexOutOfBoundsException.main(C03_ArrayIndexOutOfBoundsException.java:21)
             // java'nin yazdigi tum hata mesajini verir ama kodlar calismaya devam eder.
 
             // catch blogunda hicbir kod olmasa da kodlarimiz normal calismaya devam eder.
