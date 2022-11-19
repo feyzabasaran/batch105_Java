@@ -2,6 +2,7 @@ package ders11_stringManipulation;
 
 public class C06_Soru {
     public static void main(String[] args) {
+
         // Soru 1 : Kullanicidan bir cumle alin
         // - cumlede ev geciyorsa, "home home sweet home" yazdirin
         // - cumlede is geciyorsa, "calismak guzeldir"
