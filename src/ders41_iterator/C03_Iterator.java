@@ -18,7 +18,7 @@ public class C03_Iterator {
         Integer element;
 
         while (it1.hasNext()){
-            element= (Integer) it1.next();
+            element = (Integer) it1.next();
 
             if (element>15 && element<35){
                 it1.remove();

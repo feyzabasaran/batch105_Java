@@ -17,7 +17,7 @@ public class C02_Iterator {
 
         // tum elementleri iterator kullanarak yazdiralim
 
-        System.out.println(it1.hasNext()); // true
+        System.out.println(it1.hasNext()); // yaninda sayi var mi diye soruyor true
         System.out.println(it1.next()); // 10
 
         System.out.println(it1.hasNext());  // true
@@ -25,10 +25,10 @@ public class C02_Iterator {
 
         System.out.println("=========");
 
-        while (it1.hasNext()){
-            System.out.println(it1.next());
+        while (it1.hasNext()){ // yaninda sayi oldugu müddetce
+            System.out.print(it1.next() + " "); // bir yandakini yazdir
         }
-
+        System.out.println("");
         // iterator nereye kadar iterate ettiysek orada kalır
         // bastan itibaren yazdirmak isterseniz, yeni bir iterator olusturmaniz gerekir.
 
@@ -36,7 +36,7 @@ public class C02_Iterator {
         System.out.println("===========");
 
         while (it2.hasNext()){
-            System.out.println(it2.next());
+            System.out.print(it2.next() + " ");
         }
     }
 }
