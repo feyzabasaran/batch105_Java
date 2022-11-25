@@ -22,7 +22,7 @@ public class C04_ListIterator {
             lit.next();
         }
 
-        // simfi sondan basa dogru gidelim, giderken elementleri yazdiralim
+        // simdi sondan basa dogru gidelim, giderken elementleri yazdiralim
 
         while (lit.hasPrevious()){
             System.out.print(lit.previous() + " "); // 40 30 20 10
@@ -31,6 +31,7 @@ public class C04_ListIterator {
 
         // eger iterator'i nerede biraktigimizi hatirlayamazsak,
         // iterator.nextIndex() ile hangi index'in oncesinde oldugumuzu gorebiliriz
+
         System.out.println("");
         System.out.println(lit.nextIndex()); // 0
 
@@ -46,10 +47,7 @@ public class C04_ListIterator {
 
         // iterator kullanarak 40'dan kucuk olan elementleri silin
 
-
-
         while (lit.hasPrevious()){
-
 
             if ((Integer)lit.previous()<40){
                 lit.remove();
