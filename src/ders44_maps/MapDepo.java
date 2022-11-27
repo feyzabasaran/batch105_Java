@@ -1,7 +1,6 @@
 package ders44_maps;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class MapDepo {
 
@@ -56,5 +55,139 @@ public class MapDepo {
         }
 
         return ogrenciMap;
+    }
+
+    public static void subeOgrenciBilgileriniYazdir(Map<Integer, String> ogrenciMap, String subeAdi) {
+
+        Collection<String> valueCollection =ogrenciMap.values();
+        /*
+        [
+        Ali-Can-10-H-MF,
+        Veli-Cem-11-M-Soz,
+        Ali-Cem-11-H-TM,
+        Ayse-Can-10-H-MF,
+        Ayse-Cem-11-M-TM,
+        Fatma-Han-10-K-Soz
+        ]
+         */
+        System.out.println("Isim     Soyisim     Sinif");
+        System.out.println("==========================");
+        for (String eachValue: valueCollection
+             ) {
+            // value'yu parcalarina ayir
+            String[] valueArr = eachValue.split("-"); // [Ayse, Can, 10, H, MF]
+
+            // sube ismini kontrol et, istenen sube ise isim, soyisim, sinif yazdir
+
+            if (valueArr[3].equals(subeAdi)){
+                System.out.println(valueArr[0]+" " + valueArr[1]+ " " + valueArr[2]);
+            }
+
+
+        }
+    }
+
+    public static List<String> numaraDegerineGoreListeOlustur(Map<Integer, String> ogrenciMap, int basNo, int bitNo) {
+
+        // hem Key, hem de value lazim oldugundan keySet'i olusturduk
+        // sonra o key uzerinden value'u map'den aldik
+
+        Set<Integer> ogrenciKeySeti =ogrenciMap.keySet();
+        // dondurecegimiz listeyi olusturalim
+
+        List<String> isimListesi = new ArrayList<>();
+
+        // Key degerlerini tek tek elden gecirip
+        // istenen aralikta olanlari bulalim
+        String value;
+        String[] valueArr;
+        String istenenIsim;
+        for (Integer eachKey:ogrenciKeySeti
+             ) {
+
+            if (basNo<=eachKey && eachKey<=bitNo){
+                // buraya verilen sinir degerlerine uyan
+                // eachKey'ler gelecek
+
+                // sinira uygun key'in value'sunu alalim
+                value= ogrenciMap.get(eachKey); // Ayse-Can-10-H-MF
+                // value'u parcalara ayiralim
+                valueArr=value.split("-"); // [Ayse, Can, 10, H, MF]
+                // value array'inden listeye eklenecek bilgileri alalim
+                istenenIsim = valueArr[0]+ " " + valueArr[1]+ " " +valueArr[4];
+
+                // istenenIsmi olusturduk bunu liste'ye ekleyelim
+                isimListesi.add(istenenIsim);
+            }
+        }
+        return isimListesi;
+    }
+
+    public static void numaraIsimSoyisimYazdir(Map<Integer, String> ogrenciMap) {
+
+        Set<Integer> keySeti = ogrenciMap.keySet();
+        String value;
+        String[] valueArr;
+
+        for (Integer eachKey: keySeti
+             ) {
+            value=ogrenciMap.get(eachKey);
+            valueArr=value.split("-"); // [Ayse, Can, 10, H, MF]
+
+            System.out.println(eachKey+ " " + valueArr[0]+ " " + valueArr[1]);
+
+        }
+    }
+
+    public static Set<String> siraliOgrenicListesiOlustur(Map<Integer, String> ogrenciMap) {
+
+        Set<String> siraliOgrenciSeti = new TreeSet<>();
+
+        // tum elenemtlerin key ve value'lerine birlikte ihtiyac oldugundan
+        // Entry kullanmaliyiz
+
+        Set<Map.Entry<Integer,String>> ogrenciEntrySeti =ogrenciMap.entrySet();
+
+        // Her bir entry'i elden gecirip
+        // bilgileri istedigimiz formatta alalim
+        String istenenBilgi;
+        String value;
+        String[] valueArr;
+        for (Map.Entry<Integer,String> eachEntry:ogrenciEntrySeti
+             ) {
+            // 101= Ali-Can-10-H-MF,
+            value=eachEntry.getValue();
+            valueArr=value.split("-"); //   [Ayse, Can, 10, H, MF]
+
+            istenenBilgi=valueArr[4] + ", " + valueArr[2] + ", " + valueArr[3] + ", " +
+                    valueArr[0] + " " + valueArr[1] + ", " + eachEntry.getKey();
+
+            siraliOgrenciSeti.add(istenenBilgi);
+            // Map'te herhangi bir degisiklik istenmediginden
+            // array'i yeniden birlestirip, entry.setValue() yapmamiza gerek yok
+        }
+        return siraliOgrenciSeti;
+    }
+
+    public static Map<Integer, String> soyisimleriBuyukHarfYap(Map<Integer, String> ogrenciMapi) {
+
+        String value;
+        String[] valueArr;
+        // soyisimleri buyutmek icin once Entry set alalim
+        Set<Map.Entry<Integer,String>> ogrenciEntrySeti = ogrenciMapi.entrySet();
+        // entrySet'teki her bir entry'deki value'yi alalim
+        for (Map.Entry<Integer,String> eachEntry: ogrenciEntrySeti
+             ) {
+            value= eachEntry.getValue();
+            // value'yi split yapip array'e cevirelim
+            valueArr = value.split("-");
+            // array'de istedigimiz degisikligi yapalim // [Ayse, CAN, 10, H, MF]
+            valueArr[1] = valueArr[1].toUpperCase();
+            // array'deki yeni bilgileri birlestirip eachEntry.setValue(yeniValue)
+            eachEntry.setValue(valueArr[0]+"-" +valueArr[1]+"-" +valueArr[2]+"-" +
+                               valueArr[3]+"-" +valueArr[4]);
+        }
+
+        return ogrenciMapi;
     }
 }
