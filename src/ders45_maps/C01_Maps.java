@@ -28,7 +28,7 @@ public class C01_Maps {
             if (kullanimMiktarlariMap.containsKey(harflerArr[i])){
                 continue;
             }else {
-                // kod buraya geldiyse o harf henuz map'e eklenmemistir
+                // kod buraya geldiyse o harf henuz map'e eklenmemistir.
                 // o zaman bu harfin kullanim miktarini bulmaliyiz.
                 for (int j = i+1; j < harflerArr.length ; j++) {
                     if (harflerArr[j].equals(harflerArr[i])){
